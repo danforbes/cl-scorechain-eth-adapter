@@ -11,7 +11,7 @@ Chainlink adapter for the [Scorechain Ethereum API](https://ethereum.scorechain.
 
 The Scorechain Ethereum Adapter exposes the following capabilities:
 
-### Get Status
+### [Get Status](https://ethereum.scorechain.com/api_doc/#/blockchain%20data/getSystemStatus)
 
 Get the status of the Scorechain Ethereum API.
 
@@ -19,7 +19,7 @@ Get the status of the Scorechain Ethereum API.
 
 * `endpoint` - `get-status`
 
-### Get Transaction
+### [Get Transaction](https://ethereum.scorechain.com/api_doc/#/blockchain%20data/getTransaction)
 
 Get a transaction from the Scorechain Ethereum API.
 
@@ -27,6 +27,17 @@ Get a transaction from the Scorechain Ethereum API.
 
 * `endpoint` - `get-trx`
 * `hash` - hash of the desired transaction `string`
+
+### [Get Scoring](https://ethereum.scorechain.com/api_doc/#/scoring/getAddressScoring)
+
+Get scoring of incoming or outgoing funds of an address from the Scorechain Ethereum API.
+
+#### Params
+
+* `endpoint` - `get-scoring`
+* `address` - address to be scored `string`
+* `direction` - direction of the scoring `{incoming|outgoing}`
+* `depth` - depth of the analysis `[1-10]` (default: `3`)
 
 ## Test
 
